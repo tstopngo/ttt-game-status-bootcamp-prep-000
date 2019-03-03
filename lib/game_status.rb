@@ -13,7 +13,7 @@ def won?(board)
        board[win_combo[1]] == board[win_combo[2]] 
       return win_combo
       else
-        false
+        return false
     end
   end
  end
