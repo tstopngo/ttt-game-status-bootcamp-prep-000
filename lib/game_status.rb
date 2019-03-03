@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8
 def won?(board)
    WIN_COMBINATIONS.each do |win_combo|
     if board[win_combo[0]] == board[win_combo[1]] &&
-       board[win_combo[1]] == board[win_combo[2]] 
+       board[win_combo[1]] == board[win_combo[2]] && position_taken?(board, win_combo[0]) 
       return win_combo
       else
         return false
