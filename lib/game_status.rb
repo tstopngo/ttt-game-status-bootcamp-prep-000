@@ -11,7 +11,7 @@ def won?(board)
 winner = []
 empty_board = board.all? {|position| position == " "}
 WIN_COMBINATIONS.each do |win_combo|
-    if empty_board
+    if empty_board || full?
       return false
     elsif win_combo.all? { |index| board[index] =="X" } || win_combo.all? { |index| board[index] =="O" }
       winner = win_combo
@@ -19,4 +19,7 @@ WIN_COMBINATIONS.each do |win_combo|
   end
   winner
 end
+
+def full?(board)
+  
 
