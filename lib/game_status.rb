@@ -24,3 +24,4 @@ def full?(board)
   !board.any? { |position| position == " " }
 end
 
+def draw?(board)
