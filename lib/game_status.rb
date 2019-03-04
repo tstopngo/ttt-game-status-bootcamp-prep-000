@@ -21,7 +21,7 @@ WIN_COMBINATIONS.each do |win_combo|
 end
 
 def full?(board)
-  !board.any? { |position| position == " " } #any will return true if one spot is blank
+  !board.any? { |position| position == " " }
 end
 
 def draw?(board)
