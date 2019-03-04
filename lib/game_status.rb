@@ -35,3 +35,4 @@ def over?(board)
   else
     return false
   end
+end
