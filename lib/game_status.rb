@@ -21,6 +21,6 @@ WIN_COMBINATIONS.each do |win_combo|
 end
 
 def full?(board)
-  !board.any? { |x| x == " " }
+  !board.any? { |position| position == " " }
 end
 
