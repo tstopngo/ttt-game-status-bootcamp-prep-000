@@ -29,4 +29,5 @@ def draw?(board)
     true
   else
     false
+  end
 end
